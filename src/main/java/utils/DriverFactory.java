@@ -1,6 +1,7 @@
 package utils;
 
 import io.appium.java_client.AppiumDriver;
+import pageObjects.Homescreen;
 import pageObjects.LoginScreen;
 import pageObjects.RegisterScreen;
 
@@ -12,6 +13,7 @@ public class DriverFactory {
 
     public static LoginScreen loginScreen;
     public static RegisterScreen registerScreen;
+    public static Homescreen homescreen;
 
     public AppiumDriver getDriver() throws IOException {
         try {
@@ -27,6 +29,7 @@ public class DriverFactory {
             // This is to Instantiate class by creating object
             loginScreen = new LoginScreen(driver);
             registerScreen = new RegisterScreen(driver);
+            homescreen = new Homescreen(driver);
         }
         return driver;
     }

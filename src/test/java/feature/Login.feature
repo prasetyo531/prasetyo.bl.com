@@ -8,7 +8,7 @@ Feature: Login into account
     Given User navigate to login screen
     When User input "<email>" and "<password>"
     And User click login button
-    Then User will be directed to homescreen app
+    Then User will see user own "<email>" on homescreen
 
     Examples:
       |              email               |      password  |
