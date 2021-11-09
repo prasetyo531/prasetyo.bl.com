@@ -17,6 +17,9 @@ public class LoginScreen extends ActionBase{
     @AndroidFindBy(id="com.loginmodule.learning:id/appCompatButtonLogin")
     public MobileElement loginBtn;
 
+    @AndroidFindBy(id="com.loginmodule.learning:id/snackbar_text")
+    public MobileElement snackBarLogin;
+
     @AndroidFindBy(id="com.loginmodule.learning:id/textViewLinkRegister")
     public MobileElement registerLinkText;
 
