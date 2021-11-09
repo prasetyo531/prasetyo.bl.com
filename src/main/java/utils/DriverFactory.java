@@ -1,7 +1,8 @@
 package utils;
 
 import io.appium.java_client.AppiumDriver;
-import pageObjects.OnboardingScreen;
+import pageObjects.LoginScreen;
+import pageObjects.RegisterScreen;
 
 import java.io.IOException;
 
@@ -9,7 +10,8 @@ public class DriverFactory {
 
     public static AppiumDriver driver;
 
-    public static OnboardingScreen onBoardingScreen;
+    public static LoginScreen loginScreen;
+    public static RegisterScreen registerScreen;
 
     public AppiumDriver getDriver() throws IOException {
         try {
@@ -23,7 +25,8 @@ public class DriverFactory {
             System.out.println("Unable to load apps: " + e.getMessage());
         } finally {
             // This is to Instantiate class by creating object
-            onBoardingScreen = new OnboardingScreen(driver);
+            loginScreen = new LoginScreen(driver);
+            registerScreen = new RegisterScreen(driver);
         }
         return driver;
     }
