@@ -22,15 +22,15 @@ public class MasterHooks extends DriverFactory {
     }
 
     @After
-    public void tearDownScreenshootFailure(Scenario scenario) throws IOException {
+    public void tearDownScreenshootFailure(Scenario scenario) throws IOException, InterruptedException {
         if (scenario.isFailed() && driver !=null) {
             scenario.embed(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png");
             try {
                 driver.closeApp();
-                driver.resetApp();
+                //driver.resetApp();
                 System.out.println("need reset android app");
                 AppiumServer.stop();
-            } catch (IOException e) {
+            } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }
         } if (driver != null) {

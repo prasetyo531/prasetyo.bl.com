@@ -20,7 +20,7 @@ public class AppiumServer {
     }
 
     //Stopping the Appium Server
-    public static void stop() throws IOException {
+    public static void stop() throws IOException, InterruptedException {
         if (process != null) {
             process.destroy();
             Thread.sleep(2500);

@@ -11,8 +11,8 @@ Feature: Login into account
     Then User will see user own "<email>" on homescreen
 
     Examples:
-      |              email               |      password  |
-      |    migration001@mailinator.com   |     test12345  |
+      |              email             |      password  |
+      |    loginapk01@mailinator.com   |     test12345  |
 
   @Android @Login @Negative
   Scenario Outline: Login using invalid data
