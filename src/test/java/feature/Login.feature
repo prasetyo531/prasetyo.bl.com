@@ -3,7 +3,7 @@ Feature: Login into account
   In order to perform successful login
   User input email and password
 
-  @Android @Login @Positive
+  @Android @Positive
   Scenario Outline: Login using valid data
     Given User navigate to login screen
     When User input "<email>" and "<password>"

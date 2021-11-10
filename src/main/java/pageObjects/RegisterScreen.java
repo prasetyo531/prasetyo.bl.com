@@ -79,4 +79,9 @@ public class RegisterScreen extends ActionBase{
         WaitUntilElementIsVisible(enterValidEmailErrorMsg);
         return new RegisterScreen(driver);
     }
+
+    public RegisterScreen tapLoginFromRegister() {
+        tapByElement(loginLinkText);
+        return new RegisterScreen(driver);
+    }
 }

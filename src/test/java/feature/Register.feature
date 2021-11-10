@@ -9,6 +9,10 @@ Feature: Create account
     When User input "<name>", "<email>", "<password>" and "<confirmpassword>"
     And User click register button
     Then Display toast message "Registration Successful" is displayed at bottom
+    And User click login from register screen
+    When User input "<email>" and "<password>"
+    And User click login button
+    Then User will see user own "<email>" on homescreen
 
     Examples:
       |   name         |              email           |      password  |     confirmpassword     |

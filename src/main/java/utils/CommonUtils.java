@@ -66,7 +66,7 @@ public class CommonUtils {
         capabilities.setCapability(APP_PACKAGE, CommonUtils.BASE_PKG);
         capabilities.setCapability("skipDeviceInitialization", true);
         capabilities.setCapability("skipServerInstallation", true);
-        capabilities.setCapability("noReset", false);
+        //capabilities.setCapability("noReset", false);
     }
 
     public static AppiumDriver getAndroidDriver() throws MalformedURLException {

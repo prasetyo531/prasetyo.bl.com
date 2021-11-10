@@ -33,4 +33,10 @@ public class LoginStepDefinition extends DriverFactory {
     public void user_will_see_user_own_something_on_homescreen(String email) {
         homescreen.verifyHome(email);
     }
+
+    @And("^User click login from register screen$")
+    public void user_click_login_from_register_screen() throws InterruptedException {
+        Thread.sleep(5000);
+        registerScreen.tapLoginFromRegister();
+    }
 }

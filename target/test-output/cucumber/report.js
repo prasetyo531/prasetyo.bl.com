@@ -48,8 +48,28 @@ formatter.step({
   "name": "Display toast message \"Registration Successful\" is displayed at bottom",
   "keyword": "Then "
 });
-formatter.examples({
+formatter.step({
+  "line": 12,
+  "name": "User click login from register screen",
+  "keyword": "And "
+});
+formatter.step({
   "line": 13,
+  "name": "User input \"\u003cemail\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "User click login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "User will see user own \"\u003cemail\u003e\" on homescreen",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 17,
   "name": "",
   "description": "",
   "id": "create-account;register-using-valid-data;",
@@ -61,7 +81,7 @@ formatter.examples({
         "password",
         "confirmpassword"
       ],
-      "line": 14,
+      "line": 18,
       "id": "create-account;register-using-valid-data;;1"
     },
     {
@@ -71,18 +91,18 @@ formatter.examples({
         "test12345",
         "test12345"
       ],
-      "line": 15,
+      "line": 19,
       "id": "create-account;register-using-valid-data;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 9377467165,
+  "duration": 17939719038,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 15,
+  "line": 19,
   "name": "Register using valid data",
   "description": "",
   "id": "create-account;register-using-valid-data;;2",
@@ -129,11 +149,38 @@ formatter.step({
   "name": "Display toast message \"Registration Successful\" is displayed at bottom",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 12,
+  "name": "User click login from register screen",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "User input \"loginapk01@mailinator.com\" and \"test12345\"",
+  "matchedColumns": [
+    1,
+    2
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "User click login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "User will see user own \"loginapk01@mailinator.com\" on homescreen",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
 formatter.match({
   "location": "RegisterStepDefinition.user_navigate_to_register_screen()"
 });
 formatter.result({
-  "duration": 1027814437,
+  "duration": 2583948014,
   "status": "passed"
 });
 formatter.match({
@@ -158,14 +205,14 @@ formatter.match({
   "location": "RegisterStepDefinition.user_input_something_something_something_and_something(String,String,String,String)"
 });
 formatter.result({
-  "duration": 4562626300,
+  "duration": 8423184701,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepDefinition.user_click_register_button()"
 });
 formatter.result({
-  "duration": 946507436,
+  "duration": 1099791862,
   "status": "passed"
 });
 formatter.match({
@@ -178,15 +225,59 @@ formatter.match({
   "location": "LoginStepDefinition.display_toast_message_something_is_displayed_at_bottom(String)"
 });
 formatter.result({
-  "duration": 498098217,
+  "duration": 699354212,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.user_click_login_from_register_screen()"
+});
+formatter.result({
+  "duration": 6215436413,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "loginapk01@mailinator.com",
+      "offset": 12
+    },
+    {
+      "val": "test12345",
+      "offset": 44
+    }
+  ],
+  "location": "LoginStepDefinition.user_input_something_and_something(String,String)"
+});
+formatter.result({
+  "duration": 2314847507,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.user_click_login_button()"
+});
+formatter.result({
+  "duration": 1054157401,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "loginapk01@mailinator.com",
+      "offset": 24
+    }
+  ],
+  "location": "LoginStepDefinition.user_will_see_user_own_something_on_homescreen(String)"
+});
+formatter.result({
+  "duration": 1839913929,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2504632045,
+  "duration": 2502930677,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 18,
+  "line": 22,
   "name": "Register using invalid format email",
   "description": "",
   "id": "create-account;register-using-invalid-format-email",
@@ -194,41 +285,41 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 17,
+      "line": 21,
       "name": "@Android"
     },
     {
-      "line": 17,
+      "line": 21,
       "name": "@Register"
     },
     {
-      "line": 17,
+      "line": 21,
       "name": "@Negative"
     }
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 23,
   "name": "User navigate to register screen",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 24,
   "name": "User input \"\u003cname\u003e\", \"\u003cemail\u003e\", \"\u003cpassword\u003e\" and \"\u003cconfirmpassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
+  "line": 25,
   "name": "User click register button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
+  "line": 26,
   "name": "Display error message to enter valid email under email field",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 24,
+  "line": 28,
   "name": "",
   "description": "",
   "id": "create-account;register-using-invalid-format-email;",
@@ -240,7 +331,7 @@ formatter.examples({
         "password",
         "confirmpassword"
       ],
-      "line": 25,
+      "line": 29,
       "id": "create-account;register-using-invalid-format-email;;1"
     },
     {
@@ -250,18 +341,18 @@ formatter.examples({
         "test12345",
         "test12345"
       ],
-      "line": 26,
+      "line": 30,
       "id": "create-account;register-using-invalid-format-email;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 11222731304,
+  "duration": 22063763402,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 26,
+  "line": 30,
   "name": "Register using invalid format email",
   "description": "",
   "id": "create-account;register-using-invalid-format-email;;2",
@@ -269,26 +360,26 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 17,
+      "line": 21,
       "name": "@Register"
     },
     {
-      "line": 17,
+      "line": 21,
       "name": "@Android"
     },
     {
-      "line": 17,
+      "line": 21,
       "name": "@Negative"
     }
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 23,
   "name": "User navigate to register screen",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
+  "line": 24,
   "name": "User input \"negativedua\", \"loginapk02\", \"test12345\" and \"test12345\"",
   "matchedColumns": [
     0,
@@ -299,12 +390,12 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
+  "line": 25,
   "name": "User click register button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
+  "line": 26,
   "name": "Display error message to enter valid email under email field",
   "keyword": "Then "
 });
@@ -312,7 +403,7 @@ formatter.match({
   "location": "RegisterStepDefinition.user_navigate_to_register_screen()"
 });
 formatter.result({
-  "duration": 1063309111,
+  "duration": 1419448991,
   "status": "passed"
 });
 formatter.match({
@@ -337,25 +428,25 @@ formatter.match({
   "location": "RegisterStepDefinition.user_input_something_something_something_and_something(String,String,String,String)"
 });
 formatter.result({
-  "duration": 4830461630,
+  "duration": 7187396829,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepDefinition.user_click_register_button()"
 });
 formatter.result({
-  "duration": 1575119885,
+  "duration": 1180850982,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStepDefinition.display_error_message_to_enter_valid_email_under_email_field()"
 });
 formatter.result({
-  "duration": 196815138,
+  "duration": 1306707498,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2503402630,
+  "duration": 2505119330,
   "status": "passed"
 });
 });
