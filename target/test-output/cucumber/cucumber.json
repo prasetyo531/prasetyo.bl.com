@@ -1,0 +1,254 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9377467165,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Register using valid data",
+        "description": "",
+        "id": "create-account;register-using-valid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2504632045,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownScreenshootFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1027814437,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to register screen",
+            "match": {
+              "location": "RegisterStepDefinition.user_navigate_to_register_screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4562626300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User input \"positifsatu\", \"loginapk01@mailinator.com\", \"test12345\" and \"test12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "positifsatu",
+                  "offset": 12
+                },
+                {
+                  "val": "loginapk01@mailinator.com",
+                  "offset": 27
+                },
+                {
+                  "val": "test12345",
+                  "offset": 56
+                },
+                {
+                  "val": "test12345",
+                  "offset": 72
+                }
+              ],
+              "location": "RegisterStepDefinition.user_input_something_something_something_and_something(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 946507436,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click register button",
+            "match": {
+              "location": "RegisterStepDefinition.user_click_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 498098217,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Display toast message \"Registration Successful\" is displayed at bottom",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Registration Successful",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepDefinition.display_toast_message_something_is_displayed_at_bottom(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Register"
+          },
+          {
+            "line": 6,
+            "name": "@Positive"
+          },
+          {
+            "line": 6,
+            "name": "@Android"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11222731304,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Register using invalid format email",
+        "description": "",
+        "id": "create-account;register-using-invalid-format-email;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2503402630,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownScreenshootFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1063309111,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User navigate to register screen",
+            "match": {
+              "location": "RegisterStepDefinition.user_navigate_to_register_screen()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4830461630,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User input \"negativedua\", \"loginapk02\", \"test12345\" and \"test12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "negativedua",
+                  "offset": 12
+                },
+                {
+                  "val": "loginapk02",
+                  "offset": 27
+                },
+                {
+                  "val": "test12345",
+                  "offset": 41
+                },
+                {
+                  "val": "test12345",
+                  "offset": 57
+                }
+              ],
+              "location": "RegisterStepDefinition.user_input_something_something_something_and_something(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1575119885,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click register button",
+            "match": {
+              "location": "RegisterStepDefinition.user_click_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196815138,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Display error message to enter valid email under email field",
+            "match": {
+              "location": "RegisterStepDefinition.display_error_message_to_enter_valid_email_under_email_field()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Register"
+          },
+          {
+            "line": 17,
+            "name": "@Android"
+          },
+          {
+            "line": 17,
+            "name": "@Negative"
+          }
+        ]
+      }
+    ],
+    "name": "Create account",
+    "description": "\nIn order to perform successful register\nUser can register using name",
+    "id": "create-account",
+    "keyword": "Feature",
+    "uri": "Register.feature"
+  }
+]

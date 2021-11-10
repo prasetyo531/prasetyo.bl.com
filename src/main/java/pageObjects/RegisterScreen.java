@@ -30,6 +30,9 @@ public class RegisterScreen extends ActionBase{
     @AndroidFindBy(id="com.loginmodule.learning:id/appCompatTextViewLoginLink")
     public MobileElement loginLinkText;
 
+    @AndroidFindBy(xpath="//android.widget.TextView[contains(@package, 'com.loginmodule.learning') and @text='Enter Valid Email']")
+    public MobileElement enterValidEmailErrorMsg;
+
     // This is a constructor, as every page need a base driver to find android elements
     public RegisterScreen(AppiumDriver driver) {
 
@@ -57,21 +60,23 @@ public class RegisterScreen extends ActionBase{
     }
 
     public RegisterScreen inputConfirmPassword(String confirmpass) {
-
         inputValue(confirmPasswordField, confirmpass);
         return new RegisterScreen(driver);
     }
 
     public RegisterScreen tapRegisterBtn() {
-
         tapByElement(registerBtn);
         return new RegisterScreen(driver);
     }
 
     public RegisterScreen assertTextRegisSuccess(String text) {
-
         String txtWarning = snackBarRegister.getText();
         Assert.assertEquals(txtWarning, text);
+        return new RegisterScreen(driver);
+    }
+
+    public RegisterScreen isErrorInvalidEmailAppear() {
+        WaitUntilElementIsVisible(enterValidEmailErrorMsg);
         return new RegisterScreen(driver);
     }
 }

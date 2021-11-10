@@ -1,0 +1,113 @@
+[
+  {
+    "source": "^User click register button$",
+    "steps": [
+      {
+        "name": "User click register button",
+        "aggregatedDurations": {
+          "average": 1.26081366,
+          "median": 1.26081366
+        },
+        "durations": [
+          {
+            "duration": 0.946507436,
+            "location": "Register.feature:10"
+          },
+          {
+            "duration": 1.575119885,
+            "location": "Register.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User input \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User input \"positifsatu\", \"loginapk01@mailinator.com\", \"test12345\" and \"test12345\"",
+        "aggregatedDurations": {
+          "average": 4.5626263,
+          "median": 4.5626263
+        },
+        "durations": [
+          {
+            "duration": 4.5626263,
+            "location": "Register.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "User input \"negativedua\", \"loginapk02\", \"test12345\" and \"test12345\"",
+        "aggregatedDurations": {
+          "average": 4.83046163,
+          "median": 4.83046163
+        },
+        "durations": [
+          {
+            "duration": 4.83046163,
+            "location": "Register.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Display toast message \"([^\"]*)\" is displayed at bottom$",
+    "steps": [
+      {
+        "name": "Display toast message \"Registration Successful\" is displayed at bottom",
+        "aggregatedDurations": {
+          "average": 0.498098217,
+          "median": 0.498098217
+        },
+        "durations": [
+          {
+            "duration": 0.498098217,
+            "location": "Register.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Display error message to enter valid email under email field$",
+    "steps": [
+      {
+        "name": "Display error message to enter valid email under email field",
+        "aggregatedDurations": {
+          "average": 0.196815138,
+          "median": 0.196815138
+        },
+        "durations": [
+          {
+            "duration": 0.196815138,
+            "location": "Register.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User navigate to register screen$",
+    "steps": [
+      {
+        "name": "User navigate to register screen",
+        "aggregatedDurations": {
+          "average": 1.045561774,
+          "median": 1.045561774
+        },
+        "durations": [
+          {
+            "duration": 1.027814437,
+            "location": "Register.feature:8"
+          },
+          {
+            "duration": 1.063309111,
+            "location": "Register.feature:19"
+          }
+        ]
+      }
+    ]
+  }
+]
