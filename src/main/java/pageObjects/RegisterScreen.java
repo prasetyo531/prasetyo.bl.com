@@ -22,7 +22,7 @@ public class RegisterScreen extends ActionBase{
     public MobileElement confirmPasswordField;
 
     @AndroidFindBy(id="com.loginmodule.learning:id/appCompatButtonRegister")
-    public MobileElement registerField;
+    public MobileElement registerBtn;
 
     @AndroidFindBy(id="com.loginmodule.learning:id/snackbar_text")
     public MobileElement snackBarRegister;
@@ -38,7 +38,37 @@ public class RegisterScreen extends ActionBase{
         PageFactory.initElements(new AppiumFieldDecorator(this.driver),this);
     }
 
-    public RegisterScreen assertTextRegisSuccess(String text){
+    public RegisterScreen inputName(String name) {
+
+        inputValue(nameField, name);
+        return new RegisterScreen(driver);
+    }
+
+    public RegisterScreen inputEmail(String email) {
+
+        inputValue(emailField, email);
+        return new RegisterScreen(driver);
+    }
+
+    public RegisterScreen inputPassword(String email) {
+
+        inputValue(passwordField, email);
+        return new RegisterScreen(driver);
+    }
+
+    public RegisterScreen inputConfirmPassword(String confirmpass) {
+
+        inputValue(confirmPasswordField, confirmpass);
+        return new RegisterScreen(driver);
+    }
+
+    public RegisterScreen tapRegisterBtn() {
+
+        tapByElement(registerBtn);
+        return new RegisterScreen(driver);
+    }
+
+    public RegisterScreen assertTextRegisSuccess(String text) {
 
         String txtWarning = snackBarRegister.getText();
         Assert.assertEquals(txtWarning, text);

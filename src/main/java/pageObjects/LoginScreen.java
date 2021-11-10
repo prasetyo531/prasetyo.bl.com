@@ -69,6 +69,7 @@ public class LoginScreen extends ActionBase{
 
     public LoginScreen tapRegisterLinkText() {
 
+        WaitUntilElementIsVisible(registerLinkText);
         tapByElement(registerLinkText);
         return new LoginScreen(driver);
     }
