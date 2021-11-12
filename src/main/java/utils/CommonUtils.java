@@ -56,6 +56,7 @@ public class CommonUtils {
     }
 
     public static void setAndroidCapabilities() {
+        capabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+CommonUtils.APPLICATION_NAME);  //install apk
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, CommonUtils.PLATFORM_VERSION);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, CommonUtils.PLATFORM_NAME);
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, CommonUtils.DEVICE_NAME);

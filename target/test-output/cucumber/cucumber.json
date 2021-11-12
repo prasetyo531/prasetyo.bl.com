@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 17939719038,
+              "duration": 11399521919,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "Register using valid data",
+        "line": 26,
+        "name": "Login using invalid data",
         "description": "",
-        "id": "create-account;register-using-valid-data;;2",
+        "id": "login-into-account;login-using-invalid-data;;2",
         "after": [
           {
             "result": {
-              "duration": 2502930677,
+              "duration": 2500842923,
               "status": "passed"
             },
             "match": {
@@ -34,126 +34,48 @@
         "steps": [
           {
             "result": {
-              "duration": 2583948014,
+              "duration": 708551581,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User navigate to register screen",
+            "line": 19,
+            "name": "User navigate to login screen",
             "match": {
-              "location": "RegisterStepDefinition.user_navigate_to_register_screen()"
+              "location": "LoginStepDefinition.user_navigate_to_login_screen()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8423184701,
+              "duration": 1793422637,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User input \"positifsatu\", \"loginapk01@mailinator.com\", \"test12345\" and \"test12345\"",
+            "line": 20,
+            "name": "User input \"migration001@mailinator.com\" and \"test12345\"",
             "match": {
               "arguments": [
                 {
-                  "val": "positifsatu",
-                  "offset": 12
-                },
-                {
-                  "val": "loginapk01@mailinator.com",
-                  "offset": 27
-                },
-                {
-                  "val": "test12345",
-                  "offset": 56
-                },
-                {
-                  "val": "test12345",
-                  "offset": 72
-                }
-              ],
-              "location": "RegisterStepDefinition.user_input_something_something_something_and_something(String,String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1099791862,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User click register button",
-            "match": {
-              "location": "RegisterStepDefinition.user_click_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 699354212,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Display toast message \"Registration Successful\" is displayed at bottom",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Registration Successful",
-                  "offset": 23
-                }
-              ],
-              "location": "LoginStepDefinition.display_toast_message_something_is_displayed_at_bottom(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6215436413,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User click login from register screen",
-            "match": {
-              "location": "LoginStepDefinition.user_click_login_from_register_screen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2314847507,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User input \"loginapk01@mailinator.com\" and \"test12345\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "loginapk01@mailinator.com",
+                  "val": "migration001@mailinator.com",
                   "offset": 12
                 },
                 {
                   "val": "test12345",
-                  "offset": 44
+                  "offset": 46
                 }
               ],
               "location": "LoginStepDefinition.user_input_something_and_something(String,String)"
             },
             "matchedColumns": [
-              1,
-              2
+              0,
+              1
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1054157401,
+              "duration": 1048386261,
               "status": "passed"
             },
-            "line": 14,
+            "line": 21,
             "name": "User click login button",
             "match": {
               "location": "LoginStepDefinition.user_click_login_button()"
@@ -162,164 +84,43 @@
           },
           {
             "result": {
-              "duration": 1839913929,
+              "duration": 438296159,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User will see user own \"loginapk01@mailinator.com\" on homescreen",
+            "line": 22,
+            "name": "Display toast message \"Wrong Email or Password\" is displayed at bottom",
             "match": {
               "arguments": [
                 {
-                  "val": "loginapk01@mailinator.com",
-                  "offset": 24
+                  "val": "Wrong Email or Password",
+                  "offset": 23
                 }
               ],
-              "location": "LoginStepDefinition.user_will_see_user_own_something_on_homescreen(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 6,
-            "name": "@Register"
-          },
-          {
-            "line": 6,
-            "name": "@Positive"
-          },
-          {
-            "line": 6,
-            "name": "@Android"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 22063763402,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MasterHooks.setUp()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "Register using invalid format email",
-        "description": "",
-        "id": "create-account;register-using-invalid-format-email;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 2505119330,
-              "status": "passed"
-            },
-            "match": {
-              "location": "MasterHooks.tearDownScreenshootFailure(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1419448991,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User navigate to register screen",
-            "match": {
-              "location": "RegisterStepDefinition.user_navigate_to_register_screen()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7187396829,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User input \"negativedua\", \"loginapk02\", \"test12345\" and \"test12345\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "negativedua",
-                  "offset": 12
-                },
-                {
-                  "val": "loginapk02",
-                  "offset": 27
-                },
-                {
-                  "val": "test12345",
-                  "offset": 41
-                },
-                {
-                  "val": "test12345",
-                  "offset": 57
-                }
-              ],
-              "location": "RegisterStepDefinition.user_input_something_something_something_and_something(String,String,String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1180850982,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User click register button",
-            "match": {
-              "location": "RegisterStepDefinition.user_click_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1306707498,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Display error message to enter valid email under email field",
-            "match": {
-              "location": "RegisterStepDefinition.display_error_message_to_enter_valid_email_under_email_field()"
+              "location": "LoginStepDefinition.display_toast_message_something_is_displayed_at_bottom(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 21,
-            "name": "@Register"
+            "line": 17,
+            "name": "@Login"
           },
           {
-            "line": 21,
+            "line": 17,
             "name": "@Android"
           },
           {
-            "line": 21,
+            "line": 17,
             "name": "@Negative"
           }
         ]
       }
     ],
-    "name": "Create account",
-    "description": "\nIn order to perform successful register\nUser can register using name",
-    "id": "create-account",
+    "name": "Login into account",
+    "description": "\nIn order to perform successful login\nUser input email and password",
+    "id": "login-into-account",
     "keyword": "Feature",
-    "uri": "Register.feature"
+    "uri": "Login.feature"
   }
 ]

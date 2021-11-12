@@ -1,88 +1,35 @@
 [
   {
-    "source": "^User click register button$",
-    "steps": [
-      {
-        "name": "User click register button",
-        "aggregatedDurations": {
-          "average": 1.140321422,
-          "median": 1.140321422
-        },
-        "durations": [
-          {
-            "duration": 1.099791862,
-            "location": "Register.feature:10"
-          },
-          {
-            "duration": 1.180850982,
-            "location": "Register.feature:25"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "^User input \"([^\"]*)\" and \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "User input \"loginapk01@mailinator.com\" and \"test12345\"",
+        "name": "User input \"migration001@mailinator.com\" and \"test12345\"",
         "aggregatedDurations": {
-          "average": 2.314847507,
-          "median": 2.314847507
+          "average": 1.793422637,
+          "median": 1.793422637
         },
         "durations": [
           {
-            "duration": 2.314847507,
-            "location": "Register.feature:13"
+            "duration": 1.793422637,
+            "location": "Login.feature:20"
           }
         ]
       }
     ]
   },
   {
-    "source": "^User input \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$",
+    "source": "^User navigate to login screen$",
     "steps": [
       {
-        "name": "User input \"positifsatu\", \"loginapk01@mailinator.com\", \"test12345\" and \"test12345\"",
+        "name": "User navigate to login screen",
         "aggregatedDurations": {
-          "average": 8.423184701,
-          "median": 8.423184701
+          "average": 0.708551581,
+          "median": 0.708551581
         },
         "durations": [
           {
-            "duration": 8.423184701,
-            "location": "Register.feature:9"
-          }
-        ]
-      },
-      {
-        "name": "User input \"negativedua\", \"loginapk02\", \"test12345\" and \"test12345\"",
-        "aggregatedDurations": {
-          "average": 7.187396829,
-          "median": 7.187396829
-        },
-        "durations": [
-          {
-            "duration": 7.187396829,
-            "location": "Register.feature:24"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Display toast message \"([^\"]*)\" is displayed at bottom$",
-    "steps": [
-      {
-        "name": "Display toast message \"Registration Successful\" is displayed at bottom",
-        "aggregatedDurations": {
-          "average": 0.699354212,
-          "median": 0.699354212
-        },
-        "durations": [
-          {
-            "duration": 0.699354212,
-            "location": "Register.feature:11"
+            "duration": 0.708551581,
+            "location": "Login.feature:19"
           }
         ]
       }
@@ -94,89 +41,31 @@
       {
         "name": "User click login button",
         "aggregatedDurations": {
-          "average": 1.054157401,
-          "median": 1.054157401
+          "average": 1.048386261,
+          "median": 1.048386261
         },
         "durations": [
           {
-            "duration": 1.054157401,
-            "location": "Register.feature:14"
+            "duration": 1.048386261,
+            "location": "Login.feature:21"
           }
         ]
       }
     ]
   },
   {
-    "source": "^User click login from register screen$",
+    "source": "^Display toast message \"([^\"]*)\" is displayed at bottom$",
     "steps": [
       {
-        "name": "User click login from register screen",
+        "name": "Display toast message \"Wrong Email or Password\" is displayed at bottom",
         "aggregatedDurations": {
-          "average": 6.215436413,
-          "median": 6.215436413
+          "average": 0.438296159,
+          "median": 0.438296159
         },
         "durations": [
           {
-            "duration": 6.215436413,
-            "location": "Register.feature:12"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User will see user own \"([^\"]*)\" on homescreen$",
-    "steps": [
-      {
-        "name": "User will see user own \"loginapk01@mailinator.com\" on homescreen",
-        "aggregatedDurations": {
-          "average": 1.839913929,
-          "median": 1.839913929
-        },
-        "durations": [
-          {
-            "duration": 1.839913929,
-            "location": "Register.feature:15"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Display error message to enter valid email under email field$",
-    "steps": [
-      {
-        "name": "Display error message to enter valid email under email field",
-        "aggregatedDurations": {
-          "average": 1.306707498,
-          "median": 1.306707498
-        },
-        "durations": [
-          {
-            "duration": 1.306707498,
-            "location": "Register.feature:26"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User navigate to register screen$",
-    "steps": [
-      {
-        "name": "User navigate to register screen",
-        "aggregatedDurations": {
-          "average": 2.001698502,
-          "median": 2.001698502
-        },
-        "durations": [
-          {
-            "duration": 2.583948014,
-            "location": "Register.feature:8"
-          },
-          {
-            "duration": 1.419448991,
-            "location": "Register.feature:23"
+            "duration": 0.438296159,
+            "location": "Login.feature:22"
           }
         ]
       }
